@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopMate - E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./images/logo.png" alt="">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#cart" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+        <li><a href="#" id="contact-link">Contact</a></li>
+      </ul>
+      <input type="text" placeholder="Search products..." id="search-bar">
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <h1>Wel<span>come</span> to ElectronixXpert</h1>
+      <p>Your one-stop shop for all things !</p>
+    </section>
+
+    <section id="shop">
+      <h2>Our Products</h2>
+      <div class="categories">
+        <button class="category-btn" data-category="all">All</button>
+        <button class="category-btn" data-category="smartphones">Smartphones</button>
+        <button class="category-btn" data-category="laptops">Laptops</button>
+        <button class="category-btn" data-category="accessories">Accessories</button>
+      </div>
+      <div class="products-grid">
+        <!-- Products will be dynamically loaded -->
+      </div>
+    </section>
+
+    
+    <section id="cart" class="popup hidden">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="Your Contact Number" required>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Your Address" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2024 ElectronixXpert. All rights reserved.</p>
+  </footer>
+
+  <script src="/index.js"></script>
+</body>
+</html>
